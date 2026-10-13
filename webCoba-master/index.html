@@ -1,113 +1,53 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="id">
 <head>
-
-  <!-- TODO 3 - set the visual viewport -->
-  <meta name="viewport" content="width=device-width,  initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/idb.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
-
-
-  <title>OTONEWS</title>
-
-  <!-- TODO 6.1 - include custom Modernizr build -->
-  <script src="modernizr-custom.js"></script>
-
-  <link rel="stylesheet" href="style/temp.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Najla Safa</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">OTONews</a>
-    </div>
-    <!-- <ul class="nav navbar-nav">
-      /* <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Page 1</a></li>
-      <li><a href="#">Page 2</a></li>
-      <li><a href="#">Page 3</a></li>
-    </ul>-->
-  </div>
-</nav>
 
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Najla Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Beranda</a></li>
+                <li><a href="portfolio.html">Karya & Proyek</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div class='container'>
-  <div class="col">
-    <h1 style="text-align:center;  color: 00ff00;">Dodge Challenger SRT Demon</h1>
-    <figure>
-        <img id="sfo" src="images/2018-Dodge-Challenger-SRT500.jpg" 
-    sizes="(max-width: 700px) 90vw, 50vw"
-    srcset="images/2018-Dodge-Challenger-SRT1600.jpg 1600w,  
-      images/2018-Dodge-Challenger-SRT1000.jpg 1000w,  
-      images/2018-Dodge-Challenger-SRT800.jpg 800w, 
-      images/2018-Dodge-Challenger-SRT500.jpg 500w"
-      alt="Dodge Challenger" class="img-circle">
+    <main class="container">
+        <section class="hero">
+            <h1>Halo, Saya Najla Safa Andita Batuna</h1>
+            <p>Mahasiswa Informatika di Universitas Teknologi Digital Indonesia (UTDI). Selamat datang di website portofolio pribadi saya.</p>
+            <a href="portfolio.html" class="btn">Lihat Proyek Saya</a>
+        </section>
 
-    </figure>
+        <section>
+            <h2 style="text-align: center; margin-bottom: 1rem;">Fokus & Minat</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Web Development</h3>
+                    <p>Tertarik dalam pembuatan struktur dan tampilan aplikasi web yang responsif menggunakan HTML, CSS, dan JavaScript.</p>
+                </div>
+                <div class="card">
+                    <h3>Informatika & Teknologi</h3>
+                    <p>Mempelajari konsep dasar ilmu komputer, pemrograman, serta pengembangan perangkat lunak modern.</p>
+                </div>
+                <div class="card">
+                    <h3>Kreativitas Digital</h3>
+                    <p>Eksplorasi desain antarmuka web yang sederhana, rapi, dan mudah digunakan oleh pengguna.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <p>Dodge menampilkan wajah barunya kembali dalam bidang otomotif. Dodge Challenger 2018 SRT adalah nama yang disematkan pada dodge baru ini dengan tetap mempertahankan gaya classic American Muscle. Challenger SRT Demon sejatinya menggunakan basis dari Challenger SRT Hellcat, hanya saja Demon berbobot lebih ringan sekitar 90 kg dari Hellcat. Hemat bobot itu berhasil didapat dari absennya bangku penumpang depan, bangku belakang, 16 speaker serta penggunaan hollow sway bars, dan kaliper rem ringan dari aluminium. Bagi yang menginginkan bangku lengkapnya, bisa menambahkan opsional seharga sedolar untuk masing-masing bangku.
-      
-      Bayangkan, Hellcat yang memiliki performa buas itu, kemudian ditingkatkan lagi performanya hingga melahirkan 'Demon'. Pihak Dodge mengklaim, Demon merupakan mobil produksi dengan akselerasi paling kencang saat ini yang ada di pasaran.</p>
+    <footer>
+        <p>&copy; 2026 Najla Safa Andita Batuna. All rights reserved.</p>
+    </footer>
 
-  </div>
-
-  
-  <div class="col">
-    <h1 style="text-align:center;">Performa</h1>
-
-    <p>Jantung mekanis Demon menggunakan mesin V8 6.2 liter supercharged yang sama dengan Hellcat, hanya saja tenaganya meningkat dari 707 hp menjadi 840 hp. Peningkatan daya itu didapat berkat supercharger yang lebih besar, 2.7 liter, tekanan boost yang meningkat dari 14,5 menjadi 11,6 psi, piston baru dan implementasi 2 dual-stage fuel pump. </p>
-    <!-- <a href="pages/post1.html" class="post-link">Horses in a field</a> -->
-
-    <button id="addProducts" onclick="idbApp.addProducts()">Add Products</button></br></br>
-    <h2>Search Products</h2>
-    By Name: <input type="text" id="name" placeholder="Name"> <button id="byName" onclick="idbApp.displayByName()">Search</button></br></br>
-    By Price: <input type="text" id="priceLower" placeholder="Min"><input type="text" id="priceUpper" placeholder="Max"> <button id="byPrice" onclick="idbApp.getByPrice()">Search</button></br></br>
-    By Description: <input type="text" id="desc" placeholder="Description"> <button id="byDesc" onclick="idbApp.getByDesc()">Search</button></br></br>
-    <div id="results"></div>
-    <h2>Orders</h2>
-    <button id="addOrders" onclick="idbApp.addOrders()">Add Orders</button></br></br>
-    <button id="showOrders" onclick="idbApp.showOrders()">Show Orders</button></br></br>
-    <div id="orders"></div>
-    <button id="fulfill" onclick="idbApp.fulfillOrders()">Fulfill</button></br></br>
-    <div id="receipt"></div>
-  
-  <!-- <a href="pages/post2.html" class="post-link">Volt sign</a><br/>
-
-  <a href="pages/post3.html" class="post-link">Cockatoos on the deck</a><br/>
-
-  <a href="pages/post4.html" class="post-link">An old letter</a><br/>
-
-  <a href="pages/post5.html" class="post-link">Grasshopper friend</a><br/>
-
-  <a href="pages/post6.html" class="post-link">Overlooking SFO</a><br/>
-
-  <a href="pages/post7.html" class="post-link">A bird and her snack</a><br/>
-
-  <a href="non-existent.html" class="post-link">Non-existent file</a><br/> -->
-  </div>
-  
-</div>
-  
-<footer class="container-fluid bg-4 text-center">
-  <p>copyright © 2018 redvelvet| Desain Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
-</footer>
-
-  <script>
-
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('redvelvet.js')
-        .then(function(registration) {
-          console.log('Service Worker registration successful with scope: ',
-          registration.scope);
-        })
-        .catch(function(err) {
-          console.log('Service Worker registration failed: ', err);
-        });
-    }
-
-  </script>
 </body>
 </html>
